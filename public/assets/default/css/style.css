@@ -1,0 +1,176 @@
+body {
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+hr {
+	margin: 40px 0 30px 0;
+}
+
+h1 {
+	font-size: 28px;
+	line-height: 35px;
+	margin-bottom: 10px;
+}
+
+h1.logo {
+	font-size: 38px;
+}
+
+p.instruction {
+	font-size: 11px;
+}
+
+.alert {
+	margin-bottom: 10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+img.fixed-thumbnail {
+	width: 45px;
+}
+
+label {
+	float: left;
+	width: 110px;
+}
+
+input {
+	height: 30px !important;
+}
+
+textarea {
+	height: 300px;
+    width: 500px;
+}
+
+textarea.preview {
+	height: 90px;
+}
+
+
+/* Custom grid */
+.span3 {
+	width: 230px;
+	margin-left: 50px;
+}
+
+.span7 {
+	width: 680;
+}
+
+.categories input {
+	margin: 0;
+}
+
+.categories li {
+	height: 25px;
+}
+
+.well input.span4, .well input.btn {
+	margin: 7px 0 ;
+	height: 35px;
+	width: 370px;
+}
+
+/* Custom container */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 960px;
+}
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
+.fixed-icon {
+	padding: 11px 10px 0 !important;
+}
+
+.fixed-list {
+	width: 120px;
+}
+
+.fixed-width90 {
+	width: 90px !important;
+}
+
+.fixed-width160 {
+	width: 160px !important;
+}
+
+.controls {
+	margin-left: 120px;
+}
+
+.buttons .controls {
+	margin-left: 0;
+}
+
+.control-group {
+	height: auto;
+}
+
+.control-group label {
+	cursor: default;
+}
+
+.buttons {
+	margin-top: 30px;
+}
+
+a.images-list-child {
+	text-decoration: none !important;
+}
+
+a.images-list-child img {
+	padding: 2px !important;
+}
+
+/* Custom sidebar */
+.form-search input {
+	height: 30px;
+	width: 160px;
+}
+
+.well-sidebar {
+	padding: 8px;
+}
+
+.label-info {
+	margin: 3px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	margin: 60px 0;
+	text-align: center;
+}
+.jumbotron h1 {
+	font-size: 72px;
+	line-height: 1;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 60px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}

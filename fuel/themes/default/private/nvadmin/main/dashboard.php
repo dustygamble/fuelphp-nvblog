@@ -1,0 +1,1 @@
+<p>Welcome do the admin section!</p>
