@@ -1,6 +1,8 @@
 <?php 
 $data = \Theme::instance()->get_info('data');
+$site_values = $data['site_values'];
 $template_values = $data['template_values'];
+$page_values = $data['page_values'];
 ?>
 
 <!DOCTYPE> 
@@ -23,11 +25,13 @@ $template_values = $data['template_values'];
     </head>
 
     <body>
-        <div class="container-narrow">
-            <?php echo $partials['header']; ?>
+        <?php echo $partials['header']; ?>
+
+
+        <div class="container">
             <?php echo $partials['breadcrumbs']; ?>
             <?php echo $partials['content']; ?>
-            <?php echo $partials['footer']; ?> 
+            <?php echo $partials['footer']; ?>
         </div>
     </body>
 </html>

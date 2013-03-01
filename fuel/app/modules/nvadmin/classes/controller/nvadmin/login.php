@@ -54,7 +54,7 @@ class Controller_NVAdmin_Login extends \Controller
 		}
 		else
 		{
-			$this->data['site_values']['errors'] = $val->show_errors();
+			$this->data['page_values']['errors'] = $val->show_errors();
 		}
         
         $this->data['template_values']['title'] = 'MarcoPace.it';

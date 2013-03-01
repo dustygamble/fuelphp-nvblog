@@ -1,11 +1,33 @@
 body {
-	padding-top: 20px;
+    padding-top: 60px;
 	padding-bottom: 40px;
 
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-hr {
+
+
+
+
+
+
+/***************************** 
+*   ADMINISTRATION SECTION
+******************************/
+
+
+/* Login page */
+
+#admin #login input {
+	height: 40px;
+}
+
+#admin #login button.btn-medium {
+	height: 40px;
+	margin-top: 7px;
+}
+
+/*hr {
 	margin: 40px 0 30px 0;
 }
 
@@ -173,4 +195,4 @@ a.images-list-child img {
 }
 .marketing p + h4 {
 	margin-top: 28px;
-}
+}*/

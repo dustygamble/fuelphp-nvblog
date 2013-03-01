@@ -23,37 +23,39 @@ $page_values = $data['page_values'];
         ?>
     </head>
 
-    <body>
-    	<div class="container">
-	    	<div class="row">
-	    		<div class="span4 offset4 well">
-	    			<legend>Login</legend>
+    <body id="admin">
+        <div class="container">
 
-	    			<?php if(!empty($page_values['errors'])) { ?>
-	    			<div class="alert alert-error">
-	    				<a class="close" data-dismiss="alert" href="#">×</a><?php echo print_r($page_values['errors'], true); ?>
-	    			</div>
-	    			<?php } ?>
+            <div class="row">
+                <div class="span4 offset4 well">
+                    <legend>Login</legend>
 
-	    			<?php if(Session::get_flash('error')) { ?>
-	    			<div class="alert alert-error">
-	    				<a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('error'); ?>
-	    			</div>
-	    			<?php } ?>
+                    <?php if(!empty($page_values['errors'])) { ?>
+                    <div class="alert alert-error">
+                        <a class="close" data-dismiss="alert" href="#">×</a><?php echo print_r($page_values['errors'], true); ?>
+                    </div>
+                    <?php } ?>
 
-	    			<?php if(Session::get_flash('success')) { ?>
-	    			<div class="alert alert-success">
-	    				<a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('success'); ?>
-	    			</div>
-	    			<?php } ?>
+                    <?php if(Session::get_flash('error')) { ?>
+                    <div class="alert alert-error">
+                        <a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('error'); ?>
+                    </div>
+                    <?php } ?>
 
-	    			<?php echo Form::open('admin/login'); ?>
-		    			<input type="text" name="username" class="span4" placeholder="Username" />
-						<input type="password" name="password" class="span4" placeholder="Password" />
-						<?php echo Form::submit('login', 'Login', array('class' => 'btn btn-info btn-block')); ?>
-	    			<?php echo Form::close(); ?>
-	    		</div>
-	    	</div>
-	    </div>
+                    <?php if(Session::get_flash('success')) { ?>
+                    <div class="alert alert-success">
+                        <a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('success'); ?>
+                    </div>
+                    <?php } ?>
+
+                    <?php echo Form::open(array('action' => 'admin/login', 'id' => 'login')); ?>
+                        <input type="text" name="username" class="span4" placeholder="Username" />
+                        <input type="password" name="password" class="span4" placeholder="Password" />
+                        <button class="btn btn-medium btn-primary" type="submit">Login</button>
+                    <?php echo Form::close(); ?>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>
