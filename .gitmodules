@@ -22,3 +22,6 @@
 [submodule "fuel/packages/parser"]
 	path = fuel/packages/parser
 	url = https://github.com/fuel/parser.git
+[submodule "fuel/packages/nvutility"]
+	path = fuel/packages/nvutility
+	url = https://github.com/marcopax/fuelphp-nvutility.git
