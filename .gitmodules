@@ -4,3 +4,21 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/fuel/docs.git
+[submodule "fuel/packages/auth"]
+	path = fuel/packages/auth
+	url = https://github.com/fuel/auth.git
+[submodule "fuel/packages/email"]
+	path = fuel/packages/email
+	url = https://github.com/fuel/email.git
+[submodule "fuel/packages/log"]
+	path = fuel/packages/log
+	url = https://github.com/fuel/log.git
+[submodule "fuel/packages/oil"]
+	path = fuel/packages/oil
+	url = https://github.com/fuel/oil.git
+[submodule "fuel/packages/orm"]
+	path = fuel/packages/orm
+	url = https://github.com/fuel/orm.git
+[submodule "fuel/packages/parser"]
+	path = fuel/packages/parser
+	url = https://github.com/fuel/parser.git
