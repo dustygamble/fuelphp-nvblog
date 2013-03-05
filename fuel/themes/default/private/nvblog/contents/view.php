@@ -52,7 +52,8 @@ $date = explode('.', date('j.n.M.Y', $page_values['content']->created_at));
         </div>
 
         <div class="btn-toolbar">
-            <a href="<?php echo \Uri::create('blog/' . $date[3] . '/' . $date[1] . '/' . $page_values['content']->slug); ?>" title="<?php echo \Lang::get('nvblog.shared.add'); ?>"><button class="btn btn-success" type="button"><?php echo \Lang::get('nvblog.shared.add'); ?></button></a>
+            <a href="<?php echo \Uri::create('blog/' . $date[3] . '/' . $date[1] . '/' . $page_values['content']->slug); ?>" title="<?php echo \Lang::get('nvblog.shared.preview'); ?>"><button class="btn btn-primary" type="button"><?php echo \Lang::get('nvblog.shared.preview'); ?></button></a>
+            <a href="<?php echo \Uri::create('admin/blog/contents/create'); ?>"><button class="btn btn-success"><?php echo \Lang::get('nvblog.shared.add'); ?></button></a>
             <a href="<?php echo \Uri::create('admin/blog/contents/edit/'.$page_values['content']->id); ?>" title="<?php echo \Lang::get('nvblog.shared.edit'); ?>"><button class="btn btn-warning" type="button"><?php echo \Lang::get('nvblog.shared.edit'); ?></button></a>
             <a href="<?php echo \Uri::create('admin/blog/contents/delete/'.$page_values['content']->id); ?>" onclick="return confirm('<?php echo \Lang::get('nvblog.shared.confirm'); ?>')" title="<?php echo \Lang::get('nvblog.shared.delete'); ?>"><button class="btn btn-danger" type="button"><?php echo \Lang::get('nvblog.shared.delete'); ?></button></a>
         </div>
