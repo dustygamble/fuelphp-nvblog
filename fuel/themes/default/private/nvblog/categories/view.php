@@ -6,19 +6,19 @@ $page_values = $data['page_values'];
 ?> 
 
 <div>
+    <?php if(Session::get_flash('error')) { ?>
+    <div class="alert alert-error">
+        <a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('error'); ?>
+    </div>
+    <?php } ?>
+
+    <?php if(Session::get_flash('success')) { ?>
+    <div class="alert alert-success">
+        <a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('success'); ?>
+    </div>
+    <?php } ?>
+
     <fieldset class="left">
-        <?php if(Session::get_flash('error')) { ?>
-        <div class="alert alert-error">
-            <a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('error'); ?>
-        </div>
-        <?php } ?>
-
-        <?php if(Session::get_flash('success')) { ?>
-        <div class="alert alert-success">
-            <a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('success'); ?>
-        </div>
-        <?php } ?>
-
         <div class="control-group">
             <label class="control-label"><?php echo \Lang::get('nvblog.private.shared.created_at'); ?></label>
             <div class="controls"><?php echo date('d/m/Y, g:i a', $page_values['category']->created_at); ?></div>

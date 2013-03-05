@@ -28,12 +28,13 @@ class Controller_NVAdmin_Categories extends \NVAdmin\Controller_NVAdmin
             'num_links' => 5,
             ));
 
-        // Get pages based on pagination
+        // Get values
         $categories = Model_Category::find()
             ->order_by('id', 'desc')
             ->offset($pagination->offset)
             ->limit($pagination->per_page)
             ->get();
+
         $breadcrumb = array(\Lang::get('nvblog.private.categories.shared.name_plural') => '');
 
         // Set templates variables
@@ -48,7 +49,9 @@ class Controller_NVAdmin_Categories extends \NVAdmin\Controller_NVAdmin
 
     public function action_view($id)
     {
+        // Get values
         $category = Model_Category::find($id);
+
         $breadcrumb = array(
             \Lang::get('nvblog.private.categories.shared.name_plural') => 'admin/blog/categories',
             $category->title => ''

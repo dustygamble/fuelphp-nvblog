@@ -7,21 +7,21 @@ $page_values = $data['page_values'];
 
 <div id="form">
     <?php echo \Form::open(); ?>
-        <fieldset>
-            <?php if(count($page_values['errors'])>0) { ?>
-            <div class="alert alert-error">
-                <a class="close" data-dismiss="alert" href="#">×</a>
-                <ul>
-                    <?php foreach ($page_values['errors'] as $field => $text) { ?>
-                        <li><?php echo $text; ?></li>
-                    <?php } ?>
-                </ul>
-            </div>
-            <?php } ?>
+        <?php if(count($page_values['errors'])>0) { ?>
+        <div class="alert alert-error">
+            <a class="close" data-dismiss="alert" href="#">×</a>
+            <ul>
+                <?php foreach ($page_values['errors'] as $field => $text) { ?>
+                    <li><?php echo $text; ?></li>
+                <?php } ?>
+            </ul>
+        </div>
+        <?php } ?>
 
+        <fieldset>
             <div class="control-group">
                 <label class="control-label"><?php echo \Lang::get('nvblog.private.shared.title'); ?></label>
-                <div class="controls"><?php echo \Form::input('title', \Input::post('title'), array('class' => 'medium :required')); ?></div>
+                <div class="controls"><?php echo \Form::input('title', \Input::post('title'), array('class' => 'input-xlarge')); ?></div>
             </div>
 
             <div class="control-group">

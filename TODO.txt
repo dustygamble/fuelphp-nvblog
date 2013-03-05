@@ -1,5 +1,6 @@
 
 TODO LIST
 
-    - Check nvblog/classes/controller/nvadmin files
+    - check nvblog/classes/controller/nvadmin files
+    - upload nei contents 
      

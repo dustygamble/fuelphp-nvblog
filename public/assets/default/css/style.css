@@ -5,6 +5,18 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
 .navbar-inner {
     padding: 5px 0;
 }
@@ -109,12 +121,13 @@ body {
     float: left;
     vertical-align: middle;
     font-weight: bold;
+    padding-top: 2px;
 }
 
 #admin .controls {
     vertical-align: middle;
     padding-left: 160px;
-    height: 35;
+    min-height: 35px;
 }
 
 #admin #form .control-label {
@@ -123,8 +136,37 @@ body {
 }
 
 #admin #form .controls input {
-    padding-top: 8px;
     height: 35px;
+    margin-bottom: 0px; 
+}
+
+#admin #form .controls select {
+    height: 35px;
+    margin-bottom: 0px; 
+}
+
+#admin #form .controls textarea {
+    height: 100px;
+    width: 620px;
+}
+
+#admin #form .controls p.instruction {
+    font-size: 12px;
+    color: #9B9A9A;
+    height: 20px;
+    padding: 10px 0 0;
+}
+
+
+/* Sidebar */
+
+#admin #sidebar .well {
+    background-color: #ECEAEA;
+    border: 1px solid #CBCACA;
+}
+
+#admin #sidebar .well ul {
+    margin: 0;
 }
 
 
@@ -133,6 +175,19 @@ body {
 #admin #footer {
     margin-top: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*hr {
     margin: 40px 0 30px 0;
