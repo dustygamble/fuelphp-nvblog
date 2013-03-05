@@ -58,13 +58,14 @@ class Controller_Private extends \Controller
         // Set variables
         $this->data['site_values']['global_user'] = $this->global_user;
         
-        $this->data['template_values']['title'] = 'MarcoPace.it';
+        $this->data['template_values']['title'] = 'NVBlog';
         $this->data['template_values']['subtitle'] = 'Let\'s admin the code!';
         $this->data['template_values']['description'] = 'Sezione riservata';
         $this->data['template_values']['keywords'] = 'administration, access denied';
         
         // Set template 
         \Theme::instance()->set_partial('header', 'private/_global/header');
+        \Theme::instance()->set_partial('title', 'private/_global/title');
         \Theme::instance()->set_partial('footer', 'private/_global/footer');
 	}
     

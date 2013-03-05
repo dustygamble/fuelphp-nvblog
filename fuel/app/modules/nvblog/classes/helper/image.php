@@ -2,8 +2,9 @@
 
 namespace NVBlog;
 
-class Helper_Image {
-    
+class Helper_Image 
+{
+
     /**
      * 
      * @param Array $file
@@ -15,10 +16,10 @@ class Helper_Image {
     public static function upload_file($file, $model)
     {
         \Config::load('nvblog::custom');
-        
+
         $upload_path = \Config::get('upload_path');
         $upload_dimensions = \Config::get('upload_dimensions');
-        
+
         // Generate thumb
         foreach ($upload_dimensions as $dim)
         {
@@ -32,7 +33,7 @@ class Helper_Image {
         // Generate max width image
         \Image::load($upload_path . 'tmp' . DS . $file['saved_as'])
             ->save($upload_path . 'original' . DS . $file['saved_as']);
-        
+
         // Delete original image
         Helper_Image::delete_files($file['saved_as'], array('tmp'));
 
@@ -44,11 +45,11 @@ class Helper_Image {
             'title' => $model['title'],
             'slug' => \Inflector::friendly_title($model['title'], '-', true),
             'text' => $model['text'],
-        ));
-        
+            ));
+
         return $image;
     }
-    
+
     /**
      * 
      * @param String $filename
@@ -61,10 +62,10 @@ class Helper_Image {
     public static function delete_files($filename, $dimensions = array())
     {
         \Config::load('nvblog::custom');
-        
+
         $error = false;
         $upload_path = \Config::get('upload_path');
-        
+
         // Get image dimensions to delete 
         if(count($dimensions) == 0)
         {
@@ -81,7 +82,7 @@ class Helper_Image {
                 break;
             }
         }
-        
+
         return $error;
     }
 }

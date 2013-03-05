@@ -1,9 +1,15 @@
 body {
-    padding-top: 60px;
-	padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.navbar-inner {
+    padding: 5px 0;
+}
+
+
 
 
 
@@ -18,181 +24,272 @@ body {
 
 /* Login page */
 
-#admin #login input {
-	height: 40px;
+#admin #login {
+    background-color: #FFFFFF;
 }
 
-#admin #login button.btn-medium {
-	height: 40px;
-	margin-top: 7px;
+#admin #login ul {
+    margin: 0 0 0 20px;
+}
+
+#admin #login #form input {
+    height: 40px;
+    width: 100%;
+}
+
+#admin #login #form button.btn-medium {
+    height: 40px;
+    margin-top: 7px;
+}
+
+
+/* General style */
+
+#admin {
+    background-color: #F5F5F5;
+}
+
+#admin #section {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    background-color: #ECEAEA;
+    border-bottom: 1px solid #CBCACA;
+}
+
+#admin #section h1 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#admin .breadcrumb {
+    background-color: #ECEAEA;
+    border: 1px solid #CBCACA;
+    margin: 0 0 30px;
+}
+
+#admin .btn-toolbar a {
+    margin-right: 5px;
+}
+
+
+/* Table list */
+
+#admin #list .fixed-small {
+    width: 130px;
+}
+
+#admin #list .fixed-medium {
+    width: 200px;
+}
+
+#admin #list .fixed-large {
+    width: 250px;
+}
+
+#admin #list table th, 
+#admin #list table td {
+    font-size: 14px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#admin #list table tr:hover {
+    background-color: #F9F9F9;
+}
+
+
+/* Form */
+
+#admin #form ul {
+    margin: 0 0 0 20px;
+}
+
+#admin .control-label {
+    float: left;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#admin .controls {
+    vertical-align: middle;
+    padding-left: 160px;
+    height: 35;
+}
+
+#admin #form .control-label {
+    padding-top: 8px;
+    font-weight: normal;
+}
+
+#admin #form .controls input {
+    padding-top: 8px;
+    height: 35px;
+}
+
+
+/* Footer */
+
+#admin #footer {
+    margin-top: 30px;
 }
 
 /*hr {
-	margin: 40px 0 30px 0;
+    margin: 40px 0 30px 0;
 }
 
 h1 {
-	font-size: 28px;
-	line-height: 35px;
-	margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 10px;
 }
 
 h1.logo {
-	font-size: 38px;
+    font-size: 38px;
 }
 
 p.instruction {
-	font-size: 11px;
+    font-size: 11px;
 }
 
 .alert {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .left {
-	float: left;
+    float: left;
 }
 
 .right {
-	float: right;
+    float: right;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 img.fixed-thumbnail {
-	width: 45px;
+    width: 45px;
 }
 
 label {
-	float: left;
-	width: 110px;
+    float: left;
+    width: 110px;
 }
 
 input {
-	height: 30px !important;
+    height: 30px !important;
 }
 
 textarea {
-	height: 300px;
+    height: 300px;
     width: 500px;
 }
 
 textarea.preview {
-	height: 90px;
+    height: 90px;
 }
 
 
-/* Custom grid */
+/* Custom grid 
 .span3 {
-	width: 230px;
-	margin-left: 50px;
+    width: 230px;
+    margin-left: 50px;
 }
 
 .span7 {
-	width: 680;
+    width: 680;
 }
 
 .categories input {
-	margin: 0;
+    margin: 0;
 }
 
 .categories li {
-	height: 25px;
+    height: 25px;
 }
 
 .well input.span4, .well input.btn {
-	margin: 7px 0 ;
-	height: 35px;
-	width: 370px;
+    margin: 7px 0 ;
+    height: 35px;
+    width: 370px;
 }
 
-/* Custom container */
+/* Custom container 
 .container-narrow {
-	margin: 0 auto;
-	max-width: 960px;
+    margin: 0 auto;
+    max-width: 960px;
 }
 .container-narrow > hr {
-	margin: 30px 0;
+    margin: 30px 0;
 }
 
 .fixed-icon {
-	padding: 11px 10px 0 !important;
+    padding: 11px 10px 0 !important;
 }
 
-.fixed-list {
-	width: 120px;
-}
 
-.fixed-width90 {
-	width: 90px !important;
-}
-
-.fixed-width160 {
-	width: 160px !important;
-}
 
 .controls {
-	margin-left: 120px;
+    margin-left: 120px;
 }
 
 .buttons .controls {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 .control-group {
-	height: auto;
+    height: auto;
 }
 
 .control-group label {
-	cursor: default;
+    cursor: default;
 }
 
 .buttons {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 a.images-list-child {
-	text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 a.images-list-child img {
-	padding: 2px !important;
+    padding: 2px !important;
 }
 
-/* Custom sidebar */
+/* Custom sidebar 
 .form-search input {
-	height: 30px;
-	width: 160px;
+    height: 30px;
+    width: 160px;
 }
 
 .well-sidebar {
-	padding: 8px;
+    padding: 8px;
 }
 
 .label-info {
-	margin: 3px;
+    margin: 3px;
 }
 
-/* Main marketing message and sign up button */
+/* Main marketing message and sign up button 
 .jumbotron {
-	margin: 60px 0;
-	text-align: center;
+    margin: 60px 0;
+    text-align: center;
 }
 .jumbotron h1 {
-	font-size: 72px;
-	line-height: 1;
+    font-size: 72px;
+    line-height: 1;
 }
 .jumbotron .btn {
-	font-size: 21px;
-	padding: 14px 24px;
+    font-size: 21px;
+    padding: 14px 24px;
 }
 
-/* Supporting marketing content */
+/* Supporting marketing content 
 .marketing {
-	margin: 60px 0;
+    margin: 60px 0;
 }
 .marketing p + h4 {
-	margin-top: 28px;
+    margin-top: 28px;
 }*/
