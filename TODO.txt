@@ -1,7 +1,5 @@
 
 TODO LIST
 
-    - upload immagini nei contents 
-     
-    - Rivedi pagine view
-        - images
+    - Check upload contents (/)doesn't delete old images)
+    - Create public theme
