@@ -1,7 +1,6 @@
 <?php
 
 return array(
-    'base_url'  => '/github/fuelphp-nvblog/public/',
     'profiling'  => true,
 
     'module_paths' => array(
