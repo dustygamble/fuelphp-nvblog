@@ -7,7 +7,6 @@ $date = explode('.', date('j.n.M.Y', $page_values['content']->created_at));
 ?>
 
 <div>
-
     <?php if(Session::get_flash('error')) { ?>
     <div class="alert alert-error">
         <a class="close" data-dismiss="alert" href="#">×</a><?php echo Session::get_flash('error'); ?>

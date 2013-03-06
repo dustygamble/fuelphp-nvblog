@@ -25,7 +25,7 @@ $page_values = $data['page_values'];
                 <th><?php echo \Lang::get('nvblog.private.shared.title'); ?></th>
                 <th class="fixed-medium"><?php echo \Lang::get('nvblog.private.shared.author'); ?></th>
                 <th class="fixed-medium"><?php echo \Lang::get('nvblog.shared.status'); ?></th>
-                <th class="fixed-medium"><?php echo \Lang::get('nvblog.private.shared.published_at'); ?></th>
+                <th class="fixed-medium"><?php echo \Lang::get('nvblog.private.shared.created_at'); ?></th>
             </tr>
         </thead>
         <tbody>

@@ -18,7 +18,7 @@ $page_values = $data['page_values'];
         </div>
         <?php } ?>
 
-        <fieldset class="left">
+        <fieldset>
             <div class="control-group">
                 <label class="control-label"><?php echo \Lang::get('nvblog.private.shared.title'); ?></label>
                 <div class="controls"><?php echo \Form::input('title', \Input::post('title', isset($page_values['category']->title) ? $page_values['category']->title : '' ), array('class' => 'input-xlarge')); ?></div>

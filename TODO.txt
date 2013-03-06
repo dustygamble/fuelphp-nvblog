@@ -1,6 +1,7 @@
 
 TODO LIST
 
-    - check nvblog/classes/controller/nvadmin files
-    - upload nei contents 
+    - upload immagini nei contents 
      
+    - Rivedi pagine view
+        - images

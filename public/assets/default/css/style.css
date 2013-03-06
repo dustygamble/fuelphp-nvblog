@@ -143,6 +143,7 @@ body {
 #admin #form .controls select {
     height: 35px;
     margin-bottom: 0px; 
+    padding: 7px 5px 7px 3px;
 }
 
 #admin #form .controls textarea {
