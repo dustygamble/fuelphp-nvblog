@@ -25,7 +25,7 @@ $template_values = $data['template_values'];
         ?>
     </head>
 
-    <body>
+    <body id="public">
         <div class="container-narrow">
             <?php echo $partials['header']; ?>
             <?php echo $partials['content']; ?>
